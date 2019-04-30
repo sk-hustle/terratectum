@@ -31,10 +31,7 @@
         <div class="form-group">
           <label for="size">Größenangabe:</label>
           <select class="form-control" onchange="getSize(this);" id="bagSize">
-            <option>S (2 Liter)</option>
-            <option>M (5 Liter)</option>
-            <option>L (10 Liter)</option>
-            <option>XL (25 Liter)</option>
+            <?php foreach($groessen as $groesse) echo "<option>" . $groesse . "</option>"?>
           </select>
         </div>
         
@@ -80,10 +77,7 @@
         <div class="form-group">
           <label for="size">Größenangabe:</label>
           <select class="form-control" onchange="getSize(this);"  id="potSize">
-            <option>S (2 Liter)</option>
-            <option>M (5 Liter)</option>
-            <option>L (10 Liter)</option>
-            <option>XL (25 Liter)</option>
+            <?php foreach($groessen as $groesse) echo "<option>" . $groesse . "</option>"?>
           </select>
         </div>
         
@@ -260,10 +254,6 @@ function showConditions(){
 
 function getCondition(){
     // Auswahl ein- und ausschalten
-    
-    
-    
-    
     if(fru == "Birne"){
         $("#sack").click(function() {
             $("#sack").fadeTo("fast" , 1.0);
@@ -367,7 +357,7 @@ function getCondition(){
 }
 
 
-// In die Datenbank 
+// In die Datenbank einfügen und Pop Up Meldung geben, ansonsten eine Fehlermeldung
 $("#test").click(function(){
     if(qua != undefined && fru != undefined){
         if(con == "sack"){

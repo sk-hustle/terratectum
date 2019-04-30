@@ -1,3 +1,11 @@
+<?php require_once("dbconfig.php"); // 5.12.17 21:15 
+
+
+$groessen = array("S (2 Liter)", "M (5 Liter)", "L (10 Liter)", "XL (25 Liter)");
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
