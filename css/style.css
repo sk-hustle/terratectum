@@ -1,0 +1,42 @@
+.fun-with-css{
+  font: normal normal bold 23px/1 Arial, Helvetica, sans-serif;
+
+}
+.enjoy-css {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  top: 0;
+  margin: 2% 0 0;
+  overflow: hidden;
+  border: none;
+  font: normal normal bold 100px/1 Arial, Helvetica, sans-serif;
+  color: rgba(50,50,50,10);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-shadow: 0px -3px 0px #8CC63E ;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){background-color: #f0f0f0}
+
+
+.jumbotron
+{
+    padding-bottom: unset;
+background-image:url('/img/grass.jpg');
+background-repeat:repeat;
+}
+
+.footer{
+    margin-top: 50px;
+}

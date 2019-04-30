@@ -1,0 +1,21 @@
+
+
+
+var val, fru,condition, con, siz, qua, x, y, z, sum, location;
+
+
+// initialize imagepicker
+$("select#lol").imagepicker({
+      hide_select : true,
+      show_label  : true
+})
+// jeweilige sektion nur anzeigen, wenn nötig
+document.getElementById('topf').style.display = 'none';
+document.getElementById('sack').style.display = 'none';
+document.getElementById('lose').style.display = 'none';
+
+// Frucht
+function getFruit(sel){
+    fru = sel.value;
+    console.log(fru);
+    showConditions();
